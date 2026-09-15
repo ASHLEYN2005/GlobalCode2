@@ -37,6 +37,7 @@ def update_student(id):
     for i in students:
         if i['id'] == id:
             i['name'] = 'Updated Name'
+            
             i['age'] = 25
             i['programme'] = 'Updated Programme'
             return jsonify(i)
